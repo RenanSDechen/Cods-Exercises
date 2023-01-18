@@ -1,0 +1,40 @@
+import java.util.Locale;
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+		int y =sc.nextInt();
+		String dy;
+		switch (y) {
+		case 1:
+			dy = "Sunday";
+			break;
+		case 2:
+			dy = "Monday";
+			break;
+		case 3:
+			dy = "Tuesday";
+			break;
+		case 4:
+			dy = "wednesday";
+			break;
+		case 5:
+			dy = "Thursday";
+			break;
+		case 6:
+			dy = "Friday";
+			break;
+		case 7:
+			dy = "Saturday";
+			break;
+		default:
+			dy = "invalid value";
+			break;
+		}
+		sc.close();
+		
+		System.out.printf("the value corresponds to the day:  %s ",dy);
+  }
+}
