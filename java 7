@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+Scanner sc = new Scanner(System.in);
+		char repeat;
+		do {
+			System.out.println("set the temperature to fahrenheit. ");
+			System.out.println("");
+			double f = sc.nextDouble();
+			double cel = (5*(f - 32))/9;
+			System.out.printf("equivalent to %.2f degrees celsius%n",cel);
+			System.out.println("do you want to repeat?(y/n)");
+			System.console();
+			repeat = sc.next().charAt(0);
+		}while(repeat == 'y');
+		
+		sc.close();
+		
+		}
+ }
