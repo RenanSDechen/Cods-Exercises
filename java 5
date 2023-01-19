@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+
+		Scanner sc = new Scanner(System.in);
+		int senha = sc.nextInt();
+		int cnter = 0;
+		while(senha != 2002) {
+		 System.out.printf("invalid password.%ntry again%n");
+		 senha = sc.nextInt();
+		 cnter = cnter + 1;
+		}
+		System.out.printf("correct password, you tryed %d times.",cnter+1);
+		sc.close();
+    }
+ }
