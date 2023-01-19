@@ -1,0 +1,22 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class Main {
+
+	public static void main(String[] args) {
+   Scanner sc = new Scanner(System.in);
+		Random generat = new Random();
+		int x = generat.nextInt(15);
+		int senha = sc.nextInt();
+		int cnter = 0;
+		while(senha != x ) {
+		 System.out.printf("invalid password.%ntry again%n");
+		 senha = sc.nextInt();
+		 cnter = cnter + 1;
+		}
+		System.out.printf("correct password, you tryed %d times.",cnter+1);
+		sc.close();
+    
+	}
+
+}
