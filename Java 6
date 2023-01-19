@@ -17,6 +17,7 @@ public class Main {
 		System.out.printf("correct password, you tryed %d times.",cnter+1);
 		sc.close();
     
+    
 	}
 
 }
